@@ -1,0 +1,16 @@
+# Scoring rules. Weights are summed, then compared against the thresholds.
+weights:
+  amount_over_limit: 40
+  new_beneficiary: 25
+  country_watchlist: 30
+  velocity: 15
+
+limits:
+  amount: 500000
+  velocity_per_hour: 5
+
+thresholds:
+  review: 40
+  block: 70
+
+watchlist_url: https://example.invalid/sanctions/current.json
